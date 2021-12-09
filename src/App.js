@@ -1,6 +1,6 @@
 import "./App.css";
 import CounterContainer from "./containers/counter_container";
-import TodosContainer from "./containers/todos_container";
+import TodosContainer from "./containers/todos_container_with_hooks";
 
 function App() {
   return (
