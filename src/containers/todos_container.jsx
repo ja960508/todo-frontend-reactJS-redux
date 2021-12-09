@@ -17,14 +17,17 @@ const TodosContainer = ({
   remove,
 }) => {
   return (
-    <Todos
-      input={input}
-      todos={todos}
-      onChangeInput={changeInput}
-      onInsert={insert}
-      onToggle={toggle}
-      onRemove={remove}
-    />
+    <>
+      <Todos
+        message={message}
+        input={input}
+        todos={todos}
+        onChangeInput={changeInput}
+        onInsert={insert}
+        onToggle={toggle}
+        onRemove={remove}
+      />
+    </>
   );
 };
 

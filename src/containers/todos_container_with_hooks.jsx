@@ -25,14 +25,16 @@ const TodosContainer = () => {
   const onRemove = useCallback((id) => dispatch(remove(id)), [dispatch]);
 
   return (
-    <Todos
-      input={input}
-      todos={todos}
-      onChangeInput={onChangeInput}
-      onInsert={onInsert}
-      onToggle={onToggle}
-      onRemove={onRemove}
-    />
+    <>
+      <Todos
+        input={input}
+        todos={todos}
+        onChangeInput={onChangeInput}
+        onInsert={onInsert}
+        onToggle={onToggle}
+        onRemove={onRemove}
+      />
+    </>
   );
 };
 
